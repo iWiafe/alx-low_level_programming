@@ -12,9 +12,9 @@ int main(void)
 	for (low = 'a'; low <= 'z'; low++)
 	putchar(low);
 
-	for (low = 'A'; low <= 'A', low++)
+	for (low = 'A'; low <= 'A'; low++)
 	putchar (low);
-	putchar ('\n')
+	putchar ('\n');
 
 	return (0);
 }

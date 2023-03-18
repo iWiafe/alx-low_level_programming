@@ -13,9 +13,5 @@ int main(void)
 	putchar(low);
 	putchar('\n');
 
-	for (low = 'A'; low <= 'A'; low++)
-	putchar(low);
-	putchar('\n');
-
 	return (0);
 }

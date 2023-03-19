@@ -4,7 +4,7 @@
  * main - Program that prints the alphabet in lowercase, and then in uppercase.
  * Return: Always (Success)
  */
-Int main(void)
+int main(void)
 {
 	int ch;
 

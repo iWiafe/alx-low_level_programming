@@ -1,4 +1,4 @@
-#iinclude "main.h"
+#include "main.h"
 
 /**
  * _abs - A function that computes the absolute value of an integer
@@ -15,5 +15,4 @@ int _abs(int i)
 	{
 		return (i * -1);
 	}
-	_putchar('\n');
 }

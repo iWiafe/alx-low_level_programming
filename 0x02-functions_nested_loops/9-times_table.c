@@ -2,13 +2,16 @@
 
 /**
  * times_table - Prints the 9 times table
- * @n: Input number as an integer
  * Return: Always (Success)
  */
 void times_table(void)
 {
-	int n;
-	int counter = 9 * n;
+	int a;
 
-	for (counter = 1; 
+	a  = 9 * n;
+	for (n = 0; n <= 12; n++)
+	{
+	_putchar(a);
+	}
+	_putchar('\n');
 }

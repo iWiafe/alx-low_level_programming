@@ -3,7 +3,7 @@
 /**
  * _isupper - Shows 1 if it is a uppercase character
  * if otherwise show 0
- * @c: The character in ACSII code
+ * @c: The character
  * Return: 1 for uppercase and 0 for the others
  */
 int _isupper(int c)

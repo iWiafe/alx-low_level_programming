@@ -6,8 +6,8 @@
  * Return: 1 for uppercase and 0 for the others
  */
 int _isupper(int c)
-(
-	if (c >= 'A' && c <= 'Z')
+{
+	if (c >= '65' && c <= '90')
 	{
 		return (1);
 	}

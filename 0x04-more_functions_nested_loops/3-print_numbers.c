@@ -2,11 +2,11 @@
 
 /**
  * print_numbers - Print the numbers 0 to 9
- * Return: Always (Success)
+ * Return: void
  */
 void print_numbers(void)
 {
-	int c;
+	char c;
 
 	for (c = 48; c <= 57; c++)
 	_putchar(c);

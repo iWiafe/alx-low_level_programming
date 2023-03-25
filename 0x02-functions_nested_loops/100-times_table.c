@@ -7,16 +7,21 @@
  */
 void print_times_table(int n)
 {
-	int n;
-	int i;
+	int n = 0;
 	int a;
+	int b;
 
-	n = 0;
-	a = n * i;
-	for (i = 0; i <= 12; i++)
+	for (a = 0; a <= n; a++)
 	{
-		if (!(n > 15 || n < 0))
-		_putchar(a);
+		for (b = 0; b <= n; b++)
+		{
+			if (n > 15 || n < 0)
+			break;
+		}
+		else
+		{
+			_putchar(b);
+		}
 	}
 	_putchar('\n');
 }

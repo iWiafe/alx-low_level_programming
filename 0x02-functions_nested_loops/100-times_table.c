@@ -20,7 +20,7 @@ void print_times_table(int n)
 		}
 		else
 		{
-			_putchar(b);
+			_putchar(n);
 		}
 	}
 	_putchar('\n');

@@ -5,7 +5,7 @@
  * followed by a newline
  * @n: number of elements of the array to be printed
  * @a: name of array
- * Return: void
+ * Return: a and n
  */
 void print_array(int *a, int n)
 {

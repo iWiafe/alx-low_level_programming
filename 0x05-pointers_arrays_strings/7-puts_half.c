@@ -3,7 +3,6 @@
 /**
  * puts_half - A function that prints half of a string
  * followed by a newline
- * if odd len, n = (length_of_the_string - 1) / 2
  * @str: string as the input
  * Return: half of input
  */

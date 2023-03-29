@@ -32,4 +32,4 @@ char *cap_string(char *str)
 
 		index++;
 	}
-
+}

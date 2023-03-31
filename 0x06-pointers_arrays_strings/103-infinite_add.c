@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * infinite_add - a function that adds two numbers
+ * *infinite_add - a function that adds two numbers
  * @n1: text represents 1st number to add
  * @n2: text represents 2nd number to add
  * @r: pointer to buffer
  * @size_r: buffer size
  * Return: pointer to calling function
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int overflow = 0, i = 0, j = 0, digits = 0;
@@ -18,8 +17,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		i++;
 	while (*(n2 + j) != '\0')
 		j++;
-	i--;
-	j--;
+		i--;
+		j--;
 	if (j >= size_r || i >= size_r)
 		return (0);
 	while (j >= 0 || i >= 0 || overflow == 1)
@@ -50,4 +49,3 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	rev_string(r);
 	return (r);
 }
-

@@ -4,7 +4,6 @@
  * print_triangle - a function that prints a triangle
  * followed by a new line
  * @size: size of the triangle
- * Return: void
  */
 void print_triangle(int size)
 {
@@ -14,7 +13,8 @@ void print_triangle(int size)
 	}
 	else
 	{
-		int a, b;
+		int a;
+		int b;
 
 		for (a = 1; a <= size; a++)
 		{

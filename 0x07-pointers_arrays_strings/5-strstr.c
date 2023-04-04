@@ -25,8 +25,8 @@ char *_strstr(char *haystack, char *needle)
 				if (needle[a + 1] == '\0')
 				{
 					return (haystack);
-					place++;
 				}
+				a++;
 			} while (haystack[a] == needle[a]);
 		}
 		haystack++;

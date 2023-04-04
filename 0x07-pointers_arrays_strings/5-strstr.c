@@ -17,6 +17,7 @@ char *_strstr(char *haystack, char *needle)
 	while (*haystack)
 	{
 		place = 0;
+
 		if (haystack[place] == needle[place])
 		{
 			do {

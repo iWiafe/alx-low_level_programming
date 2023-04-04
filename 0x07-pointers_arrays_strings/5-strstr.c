@@ -2,13 +2,13 @@
 
 /**
  * *_strstr - A function that locates a substring
- * @haystack: input to the function
- * @needle: input to the function
+ * @haystack: string
+ * @needle: substring
  * Return: Always (Success)
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int place;
+	int a;
 
 	if (*needle == 0)
 	{
@@ -17,17 +17,17 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack)
 	{
-		place = 0;
+		a = 0;
 
-		if (haystack[place] == needle[place])
+		if (haystack[a] == needle[a])
 		{
 			do {
-				if (needle[place + 1] == '\0')
+				if (needle[a + 1] == '\0')
 				{
 					return (haystack);
 					place++;
 				}
-			} while (haystack[place] == needle[place]);
+			} while (haystack[a] == needle[a]);
 		}
 		haystack++;
 	}

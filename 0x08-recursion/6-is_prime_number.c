@@ -21,12 +21,12 @@ int is_prime_number(int n)
 }
 
 /**
- * natural_prime - computes if a number is prime recursively
+ * actual_prime - computes if a number is prime recursively
  * @n: number to evaluate
  * @i: iterator
  * Return: Always (Success)
  */
-int natural_prime(int n, int i)
+int actual_prime(int n, int i)
 {
 	if (i == 1)
 	{
@@ -38,6 +38,6 @@ int natural_prime(int n, int i)
 	}
 	else
 	{
-		return (natural_prime(n, i - 1));
+		return (actual_prime(n, i - 1));
 	}
 }

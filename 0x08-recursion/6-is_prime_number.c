@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-int actual_prime(int n, int i);
+int actual_prime(int n, int a);
 
 /**
  * is_prime_number - indicates an integer is a prime number or not
@@ -23,21 +23,21 @@ int is_prime_number(int n)
 /**
  * actual_prime - computes if a number is prime recursively
  * @n: number to evaluate
- * @i: iterator
+ * @a: iterator
  * Return: Always (Success)
  */
-int actual_prime(int n, int i)
+int actual_prime(int n, int a)
 {
-	if (i == 1)
+	if (a == 1)
 	{
 		return (1);
 	}
-	if (n % i == 0 && i > 0)
+	if (n % a == 0 && a > 0)
 	{
 		return (0);
 	}
 	else
 	{
-		return (actual_prime(n, i - 1));
+		return (actual_prime(n, a - 1));
 	}
 }

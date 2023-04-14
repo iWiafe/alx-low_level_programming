@@ -26,11 +26,10 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	a = 0;
-	while (min <= max)
+	for (a = 0; min <= max; a++)
 	{
-		a++;
 		p[a] = min++;
 	}
+
 	return (p);
 }

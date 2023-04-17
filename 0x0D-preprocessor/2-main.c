@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	puts("The name of the file %s", _FILE_);
+	printf("The name of the file %s\n", _FILE_);
 
-	return 0;
+	return (0);
 }

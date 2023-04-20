@@ -11,17 +11,17 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list numb;
+	va_list nums;
 	int i;
 
-	va_start(numb, n);
+	va_start(nums, n);
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(numb, int));
+		printf("%d", va_arg(nums, int));
 
 		if (i != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
-	va_end(numb);
 	_putchar('\n');
+	va_end(nums);
 }

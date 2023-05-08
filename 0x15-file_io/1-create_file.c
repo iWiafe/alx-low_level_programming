@@ -15,7 +15,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		for (str = 0; text_content[len];)
+		for (str = 0; text_content[str];)
 			str++;
 	}
 	file_txt = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);

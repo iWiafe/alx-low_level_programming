@@ -1,16 +1,13 @@
-#include <fcntl.h>
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <sys/stat.h>
-#include <sys/types.h>
 
 void verify_IO_stat(int stat, int fd, char *filename, char mode);
 
 /**
  * main - a function that copies the content of a file to another
  * @argc: argument count
- * @argv: arguments vector
+ * @argv: argument vector
  * Return: 1 on success, otherwise exit
  */
 int main(int argc, char *argv[])
@@ -41,7 +38,6 @@ int main(int argc, char *argv[])
 	verify_IO_stat(close_ptr, ptr, NULL, 'C');
 	close_des = close(des);
 	verify_IO_stat(close_des, des, NULL, 'C');
-
 	return (0);
 }
 
@@ -60,15 +56,15 @@ void verify_IO_stat(int stat, int fd, char *filename, char mode)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
-	else if (mode == 'O' && stat == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
-		exit(98);
-	}
 	else if (mode == 'W' && stat == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 		exit(99);
+	}
+	else if (mode == 'O' && stat == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+		exit(98);
 	}
 }
 

@@ -6,8 +6,9 @@
 #include <sys/types.h>
 
 void verify_IO_stat(int stat, int fd, char *filename, char mode);
+
 /**
- * main - a function that copies the content of one file to another
+ * main - a function that copies the content of a file to another
  * @argc: argument count
  * @argv: arguments vector
  * Return: 1 on success, otherwise exit
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		mprintf(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	ptr = open(argv[1], O_RDONLY);
@@ -56,17 +57,18 @@ void verify_IO_stat(int stat, int fd, char *filename, char mode)
 {
 	if (mode == 'C' && stat == -1)
 	{
-		mprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 	else if (mode == 'O' && stat == -1)
 	{
-		mprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 		exit(98);
 	}
 	else if (mode == 'W' && stat == -1)
 	{
-		mprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 		exit(99);
 	}
 }
+
